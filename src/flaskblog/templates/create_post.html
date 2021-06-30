@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="content-section">
+    <form method="POST" action="">
+        {{ form.hidden_tag() }}
+            <legend class="border-bottom mb-4">Create Post</legend>
+            <div class="mb-3">
+                {{ form.title.label }}
+                {% if form.title.errors %}
+                    {{ form.title(class="form-control is-invalid") }}
+                    <div class="invalid-feedback">
+                        {% for error in form.title.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    {{ form.title(class="form-control") }}
+                {% endif %}
+            </div>
+            <div class="mb-3">
+                {{ form.content.label }}
+                {% if form.content.errors %}
+                    {{ form.content(class="form-control is-invalid") }}
+                    <div class="invalid-feedback">
+                        {% for error in form.content.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    {{ form.content(class="form-control") }}
+                {% endif %}
+            </div>
+            {{ form.submit(class="btn btn-outline-info") }}
+    </form>
+</div>
+{% endblock content %}
