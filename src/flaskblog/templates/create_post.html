@@ -3,7 +3,7 @@
 <div class="content-section">
     <form method="POST" action="">
         {{ form.hidden_tag() }}
-            <legend class="border-bottom mb-4">Create Post</legend>
+            <legend class="border-bottom mb-4">{{ legend }}</legend>
             <div class="mb-3">
                 {{ form.title.label }}
                 {% if form.title.errors %}
