@@ -7,6 +7,8 @@
     - [Database File Creation](#database-file-creation)
     - [Database Record Creation](#database-record-creation)
     - [Database Record Cleanup](#database-record-cleanup)
+  - [Messaging](#messaging)
+    - [Email Support](#email-support)
 
 ## Introduction
 
@@ -109,3 +111,17 @@ echo -e "from flaskblog import db, User, Post\nprint(f'User Table Contents: {Use
 User Table Contents: []
 Post Table Contents: []
 ```
+
+## Messaging
+
+### Email Support
+
+In order to use the **Forgot Password** feature, you need to make sure the following system variables exists and are valid.
+
+```bash
+# Example credentials
+export EMAIL_USER=0foap20rsflakf
+export EMAIL_PASS=opgkapojsgiwoa
+```
+
+These are being used to send outgoing email to SMTP server hosted at [mailtrap.io](https://mailtrap.io/)
