@@ -7,6 +7,7 @@
     - [Database File Creation](#database-file-creation)
     - [Database Record Creation](#database-record-creation)
     - [Database Record Cleanup](#database-record-cleanup)
+    - [Secret key and Database URI Configuration](#secret-key-and-database-uri-configuration)
   - [Messaging](#messaging)
     - [Email Support](#email-support)
 
@@ -111,6 +112,16 @@ echo -e "from flaskblog import db, User, Post\nprint(f'User Table Contents: {Use
 User Table Contents: []
 Post Table Contents: []
 ```
+
+### Secret key and Database URI Configuration
+
+The values for `SECRET_KEY` and `SQLALCHEMY_DATABASE_URI` have been moved from `config.py` file to environmental variables. In order to properly set the local database file and secret key, you need to make sure that the following system variables exists and are valid.
+
+```bash
+export SECRET_KEY='82e30eb9a16c095d5b504b44266b4d64'
+export SQLALCHEMY_DATABASE_URI='sqlite:///site.db'
+```
+
 
 ## Messaging
 
