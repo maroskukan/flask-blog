@@ -2,6 +2,7 @@
 
 - [Flask Blog Application](#flask-blog-application)
   - [Introduction](#introduction)
+  - [Documentation](#documentation)
   - [Secret Generation](#secret-generation)
   - [Database](#database)
     - [Database File Creation](#database-file-creation)
@@ -13,7 +14,13 @@
 
 ## Introduction
 
-This repository contains code for building a basic blog application using Flask.
+This repository contains code for building a basic blog application using Flask 2.x. It is inspired by [tutorial](https://www.youtube.com/playlist?list=PL-osiE80TeTs4UjLw5MM6OjgkjFeUxCYH) created by **Corey Schafer**.
+
+
+## Documentation
+
+- [Flask Tutorial](https://www.youtube.com/playlist?list=PL-osiE80TeTs4UjLw5MM6OjgkjFeUxCYH)
+
 
 ## Secret Generation
 
